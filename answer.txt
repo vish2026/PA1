@@ -1,0 +1,9 @@
+
+The file size increases as the execution time increasesbecause the client server
+architecture wills end files in chincks over the FIFO channel. This means that for
+each chink, there is communication overhead meaning that shen the client send a
+request, the server reads the file and respoinds. This ovehead is basically 
+constant, so small files complete quickly while large files take many more response
+cycles. This means that when the file size grows, the execution time will take
+longer, forming a linear trend.
+
